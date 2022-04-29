@@ -24,6 +24,8 @@ class HomePage:
         wait.until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, self.side_menu_selector)))
 
     def openBookCategory(self):
+        wait = WebDriverWait(self.driver, 3)
+        wait.until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, self.livres_menu_selector)))
         self.driver.find_element(By.CSS_SELECTOR, self.livres_menu_selector).click()
         wait = WebDriverWait(self.driver, 3)
         wait.until(expected_conditions.invisibility_of_element_located((By.CSS_SELECTOR, self.livres_menu_selector)))
