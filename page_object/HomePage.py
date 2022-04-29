@@ -14,8 +14,6 @@ class HomePage:
         self.driver = driver
 
     def closeCookies(self):
-        wait = WebDriverWait(self.driver, 3)
-        wait.until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, self.cookie_button_selector)))
         self.driver.find_element(By.CSS_SELECTOR, self.cookie_button_selector).click()
 
     def openAllMenu(self):
