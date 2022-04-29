@@ -7,7 +7,6 @@ from selenium.webdriver.support.select import Select
 
 class CartPage:
     SelectionerQuantite = "select[name='quantity']"
-    QuantiteCible = "2"
 
     def __init__(self, driver: webdriver):
         self.driver = driver

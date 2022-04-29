@@ -35,12 +35,6 @@ def test_page_object():
     cartPage = CartPage(driver)
     selectedQuantity = cartPage.changeQuantity(str(quantity))
 
-    quantiteCible = 2
-    assert selectedQuantity == str(quantiteCible)
+    assert selectedQuantity == str(quantity)
 
     driver.quit()
-
-
-
-
-
