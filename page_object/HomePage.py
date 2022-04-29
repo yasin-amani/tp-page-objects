@@ -29,3 +29,4 @@ class HomePage:
 
     def openAllBooks(self):
         self.driver.find_element(By.CSS_SELECTOR, self.tous_les_livres).click()
+
